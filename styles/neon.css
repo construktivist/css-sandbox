@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(39, 39, 46);
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+div {
+    border: 0.5px solid magenta;
+}
+
+.container {
+    width: 1000px;
+    height: 200px;
+    padding: 30px;
+    /* Non-flexbox - Centers container to viewport */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -500px; */
+}
+
+.word {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.word > div {
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* N */
+.n > div {
+    width: 10px;
+    border-radius: 15%;
+}
+
+.n > .left {
+    height: 100%;
+}
+
+.n > .center {
+    transform: rotate(-38deg);
+    margin: -20px 68px;
+    height: 223px;
+
+}
+
+/* E */
+
+.e > div {
+    width: 10px;
+    border-radius: 15%;
+}
+
