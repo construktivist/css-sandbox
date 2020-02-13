@@ -38,16 +38,24 @@ div {
 }
 
 .word > div {
-    width: 250px;
-    padding: 10px;
+    padding: 10px 10px 10px 40px;
     display: flex;
     flex-direction: row;
+    /* justify-content: space-evenly; */
+    border: none;
 }
 
 /* N */
+.n {
+    width: 150px;
+}
 .n > div {
     width: 10px;
     border-radius: 15%;
+}
+
+.n > .left, .n > .center, .n > .right {
+    background-color: magenta;
 }
 
 .n > .left {
@@ -55,16 +63,52 @@ div {
 }
 
 .n > .center {
-    transform: rotate(-38deg);
-    margin: -20px 68px;
-    height: 223px;
+    transform: rotate(-24deg);
+    margin: -5px 41px;
+    height: 189px;
 
 }
 
 /* E */
+.e {
+    width: 100px;
+}
 
 .e > div {
     width: 10px;
     border-radius: 15%;
 }
 
+.e > .left {
+    background-color: magenta;  
+}
+
+.right > .top-right, .right > .center-right, .right > .bottom-right {
+    background-color: magenta;
+}
+
+.e > .right {
+    border: none;
+    width: 80px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-right, .center-right, .bottom-right {
+    border-radius: 15%;
+    height: 10px;
+    width: 100%;
+}
+
+/* O */
+.o {
+    width: 150px;
+}
+
+.o > .center {
+    width: 100%;
+    border-radius: 100%; 
+    border-width: 10px;
+}
